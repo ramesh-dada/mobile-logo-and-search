@@ -1,8 +1,7 @@
 import {extend} from 'flarum/common/extend';
 import app from 'flarum/forum/app';
-
 import Search from 'flarum/components/Search';
-
+import HeaderPrimary from 'flarum/components/HeaderPrimary';
 /* RameshDADA Ultra PREMIUM */
 
 app.initializers.add('ramesh-dada-mobile-logo', () => {
