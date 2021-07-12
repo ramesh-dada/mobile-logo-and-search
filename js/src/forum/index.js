@@ -5,7 +5,7 @@ import HeaderPrimary from 'flarum/components/HeaderPrimary';
 /* RameshDADA Ultra PREMIUM */
 
 app.initializers.add('ramesh-dada-mobile-logo', () => {
-extend(HeaderPrimary.prototype, 'view', (component) => {
+extend(HeaderPrimary.prototype, 'items', (component) => {
     items.add('mobilelogo', <a onclick={home()}><img src={app.forum.attribute('logoUrl')} alt={app.forum.attribute('forum_title')} /></a>, -100);
 items.add('search', Search.component({
             state: app.search,
