@@ -1,12 +1,12 @@
 import {extend} from 'flarum/common/extend';
 import app from 'flarum/forum/app';
-import IndexPage from 'flarum/forum/components/IndexPage';
 import Button from 'flarum/common/components/Button';
+import Search from 'flarum/components/Search';
 
 /* global m */
 
 app.initializers.add('ramesh-dada-mobile-flarum-newdiscuss', () => {
-    extend(IndexPage.prototype, 'viewItems', function (items) {
+extend(HeaderPrimary.prototype, 'view', (component) => {
             const canStartDiscussion = app.forum.attribute('canStartDiscussion') || !app.session.user;
     items.add(
       'newDiscussion',
